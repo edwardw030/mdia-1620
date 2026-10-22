@@ -21,3 +21,5 @@ let stableMessage= "Welcome to" + stableName + "where cell service is weak and t
 let lateMessage= ("A reminder that your monthly boarding bill is currently overdue and the amount owing is $" + latePayment + " for " + Jack.name)
 
 console.log(lateMessage)
+
+auhsdadohfoifhhaoefoeaiofeiaehfioae
