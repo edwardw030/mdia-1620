@@ -9,7 +9,7 @@ let Mark = {
     luckyNumber: 8,
     favouriteToy: "ball",
 }
-Mark.hungry= true
+Mark.hungry = true
 
 let Jack = {
     name: "Jack",
@@ -17,22 +17,22 @@ let Jack = {
     snack: "lettuce",
     nickname: "jackie",
     monthlyRent: 900,
-    isHorseInside: true ,
+    isHorseInside: true,
     luckyNumber: 21,
     favouriteToy: "rope"
 }
-Jack.isHungry= false
+Jack.isHungry = false
 let Cy = {
     name: "Cy",
     age: 10,
     snack: "apples",
     nickname: "cee",
     monthlyRent: 1100,
-    isHorseInside: false ,
-    luckyNumber: 51, 
+    isHorseInside: false,
+    luckyNumber: 51,
     favouriteToy: "stuffy"
 }
-Cy.isHungry= true
+Cy.isHungry = true
 let Molly = {
     name: "Molly",
     age: 11,
@@ -43,10 +43,10 @@ let Molly = {
     luckyNumber: 88,
     favouriteToy: "paper"
 }
-Molly.isHungry= true
+Molly.isHungry = true
 
-let horses= ["Mark", "Jack", "Cy", "Molly"]
-let totalStalls= 8
+let horses = ["Mark", "Jack", "Cy", "Molly"]
+let totalStalls = 8
 
 function availableStalls(horses) {
     return totalStalls - horses.length;
@@ -64,7 +64,6 @@ function getNickname(horses) {
 
 console.log(getNickname(Molly))
 
-commit 2 
 // / From Stables 1
 // MONTHLY_RENT = 800
 // let latePayment = MONTHLY_RENT * 1.2
