@@ -64,7 +64,8 @@ function getNickname(horses) {
 
 console.log(getNickname(Molly))
 
-// From Stables 1
+commit 2 
+// / From Stables 1
 // MONTHLY_RENT = 800
 // let latePayment = MONTHLY_RENT * 1.2
 // let stableName = "Chunky ranch"
