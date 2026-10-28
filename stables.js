@@ -62,12 +62,12 @@ let totalStalls = 8
 
 function availableStalls() {
     let availableStalls = totalStalls - horses.length
-    console.log(availableStalls)
+    console.log( "There are " + availableStalls + " stalls available.")
 }
 
 availableStalls()
 function lateRent(horse) {
-    console.log(horse.monthlyRent * 1.2);
+    console.log(" $" + horse.monthlyRent * 1.2 + " will be owed if rent is paid late. ");
 }
 
 lateRent(Mark)
