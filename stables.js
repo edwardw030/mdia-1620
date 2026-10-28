@@ -1,3 +1,5 @@
+let stableName = "Chunky ranch"
+
 
 let Mark = {
     name: "Mark",
@@ -9,7 +11,6 @@ let Mark = {
     luckyNumber: 8,
     favouriteToy: "ball",
 }
-Mark.hungry = true
 
 let Jack = {
     name: "Jack",
@@ -21,7 +22,7 @@ let Jack = {
     luckyNumber: 21,
     favouriteToy: "rope"
 }
-Jack.isHungry = false
+
 let Cy = {
     name: "Cy",
     age: 10,
@@ -32,7 +33,8 @@ let Cy = {
     luckyNumber: 51,
     favouriteToy: "stuffy"
 }
-Cy.isHungry = true
+
+// New Horse
 let Molly = {
     name: "Molly",
     age: 11,
@@ -43,33 +45,39 @@ let Molly = {
     luckyNumber: 88,
     favouriteToy: "paper"
 }
+
+// Hungry Property dot notation
+Mark.isHungry = true
+Cy.isHungry = true
 Molly.isHungry = true
+Jack.isHungry = false
 
+// Array of horses
 let horses = ["Mark", "Jack", "Cy", "Molly"]
+
+// Total stalls at stable
 let totalStalls = 8
+// 20% late payment surcharge
+//  let latePayment = MONTHLY_RENT * 1.2
 
-function availableStalls(horses) {
-    return totalStalls - horses.length;
+function availableStalls() {
+    let availableStalls = totalStalls - horses.length
+    console.log(availableStalls)
 }
-console.log(availableStalls(horses))
 
-function lateRent(horses) {
-    console.log(horses.monthlyRent * 1.2);
+availableStalls()
+function lateRent(horse) {
+    console.log(horse.monthlyRent * 1.2);
 }
+
 lateRent(Mark)
 
 function getNickname(horses) {
     return horses.nickname;
 }
 
-console.log(getNickname(Molly))
+console.log(getNickname(Mark))
 
-// / From Stables 1
-// MONTHLY_RENT = 800
-// let latePayment = MONTHLY_RENT * 1.2
-// let stableName = "Chunky ranch"
+// Stable Messages
 // let stableMessage = "Welcome to" + stableName + "where cell service is weak and the coffee is strong"
 // let lateMessage = ("A reminder that your monthly boarding bill is currently overdue and the amount owing is $" + latePayment + " for " + Jack.name)
-
-// console.log(lateMessage)
-
