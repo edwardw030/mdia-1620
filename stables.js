@@ -61,8 +61,8 @@ let totalStalls = 8
 //  let latePayment = MONTHLY_RENT * 1.2
 
 function availableStalls(stalls, horses) {
-    let availableStalls = stalls - horses
-    console.log( "There are " + availableStalls + " stalls available.")
+    let emptyStalls = stalls - horses
+    console.log( "There are " + emptyStalls + " stalls available.")
 }
 availableStalls()
 
