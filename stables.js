@@ -34,7 +34,6 @@ let cy = {
     favouriteToy: "stuffy"
 }
 
-// New Horse
 let molly = {
     name: "molly",
     age: 11,
@@ -43,7 +42,7 @@ let molly = {
     monthlyRent: 1200,
     isHorseInside: true,
     luckyNumber: 88,
-    favouriteToy: "paper"
+    favouriteToy: "paper bag"
 }
 
 // Hungry Property dot notation
@@ -53,7 +52,7 @@ molly.isHungry = true
 jack.isHungry = false
 
 // Array of horses
-let horses = ["mark", "jack", "cy", "molly"]
+let horses = [mark, jack, cy, molly]
 
 // Total stalls at stable
 let totalStalls = 8
@@ -81,3 +80,38 @@ console.log(getNickname(mark))
 // Stable Messages
 // let stableMessage = "Welcome to" + stableName + "where cell service is weak and the coffee is strong"
 // let lateMessage = ("A reminder that your monthly boarding bill is currently overdue and the amount owing is $" + latePayment + " for " + Jack.name)
+
+//Day to day operations Project
+    for (const horse of horses){
+        if (horse.snack === "apples") {
+            console.log(horse.name + " loves apples !")
+            break
+        } else {
+            console.log(horse.name + " licks apple and sneezes and gallops away")
+        }
+    }
+
+    function showFavouriteToy(horse) {
+        for (let horse of horses) {
+            console.log(horse.name + "'s favorite toy is a " + horse.favouriteToy)
+        }
+    }
+
+    showFavouriteToy(horses)
+
+    function moveHorses(horsearray, isDark) {
+        for (const horse of horsearray) {
+            if (isDark === false && horse.isHorseInside === true) {
+                horse.isHorseInside = false
+                console.log (horse.name + " has moved outside for some nice weather. ")
+            }
+            else if (isDark === true && horse.isHorseInside === false) {
+                horse.isHorseInside = true 
+                console.log(horse.name + " has moved inside for some rest. ")
+            }
+        }
+    }
+
+    moveHorses([mark,cy],false)
+    moveHorses(horses, true)
+
